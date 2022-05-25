@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WELCOME_PAGE</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <section class="header-section">
+        <a href="#"
+          ><img class="logo" src="./assets/images/RLOGO.PNG" width="150"
+        /></a>
+        <div class="header-nav">
+          <label for="toggle">&#9776;</label>
+          <input type="checkbox" id="toggle" />
+          <div class="nav-items">
+            <a href="#personalities">PERSONALITIES</a>
+            <a href="#cities">CITIES</a>
+            <a href="#tourists-spots">TOURISTS-SPOTS</a>
+            <a class="cta-contact" href="#contact">CONTACT</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero-section">
+        <div class="welcome-heading">
+          <h1 class="heading">WELCOME........!</h1>
+        </div>
+      </section>
+
+      <section class="personalities-section container" id="personalities">
+        <div class="personalities-heading mg-top-btm">
+          <h1>MEET MY FAVOURITE <span class="span-head">CELEBRITIES</span></h1>
+        </div>
+        <div class="personalities grid grid--3-cols">
+          <a href="./imran.html" target="_blank">
+          <div class="p-name-img imran">
+            <img class="p-1" src="./assets/images/im1.jpg"  />
+            <h1>IMRAN KHAN</h1>
+          </div>
+        </a>
+          <a href="./elon.html">
+          <div class="p-name-img elon">
+            <img class="p-1" src="./assets/images/elon2.webp"  />
+            <h1>ELON MUSK</h1>
+          </div>
+        </a>
+        <a href="./mark.html">
+          <div class="p-name-img mark">
+            <img class="p-1" src="./assets/images/mark z3.jpg"  />
+            <h1>MARK</h1>
+          </div>
+        </a>
+          <!-- <div class="p-1"><h1>Sarfraz</h1></div>
+          <div class="p-1"><h1>Sarfraz</h1></div> -->
+        </div>
+      </section>
+
+      <section class="cities-section container" id="cities">
+        <div class="cities-heading mg-top-btm">
+          <h1>HERE ARE MY FAVOURITE <span class="span-head">CITIES</span></h1>
+        </div>
+        <div class="cities grid grid--3-cols">
+          <a href="/lahore.html">
+          <div class="c-name-img city1">
+            <img class="c-1" src="./assets/images/lhr1.jpg"  />
+            <h1>LAHORE</h1>
+          </div>
+        </a>
+          <a href="./islamabad.html">
+          <div class="c-name-img city2">
+            <img class="c-1" src="./assets/images/is1.jpg"  />
+            <h1>ISLAMABAD</h1>
+          </div>
+        </a>
+        <a href="./karachi.html">
+          <div class="c-name-img city3">
+            <img class="c-1" src="./assets/images/kr.jpg"  />
+            <h1>KARACHI</h1>
+          </div>
+        </a>
+        </div>
+      </section>
+
+      <section class="tourists-spots-section container" id="tourists-spots">
+        <div class="tourists-spots-heading mg-top-btm">
+          <h1>MEET MY FAVOURITE <span class="span-head">TOURISTS-SPOTS</span></h1>
+        </div>
+        <div class="spots grid grid--3-cols">
+          <a href="./gilgit.html">
+          <div class="t-name-img spot1">
+            <img class="c-1" src="./assets/images/k2.jpg"  />
+            <h1>GILGIT BALTISTAN</h1>
+          </div>
+        </a>
+          <a href="./hunza.html">
+          <div class="t-name-img spot2">
+            <img class="c-1" src="./assets/images/hunza1.jpg"  />
+            <h1>HUNZA</h1>
+          </div>
+        </a>
+        <a href="./kalam.html">
+          <div class="t-name-img spot3">
+            <img class="c-1" src="./assets/images/kalam1.jpg"  />
+            <h1>KALAM</h1>
+          </div>
+        </a>
+        </div>
+      </section>
+
+
+      <div class="contact-heading mg-top-btm" id = "contact">
+        <h1>CONTACT US</h1>
+      </div>
+      <section class="contact-section container">
+        <div class="contact-form">
+          <form action="#">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Pakistan</option>
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input class="mg-top-btm" type="submit" value="Submit">
+        
+          </form>
+        </div>
+      </section>
+
+      <section class="footer-section">
+        <p class="copyright">PoweredBy_RehmanCreative2022. &copy;	</p>
+        <!-- <img src="./assets/images/RLOGO.PNG" width="150" /> -->
+        <div class="footer-icons">
+          <ul>
+            <li><a href="https://www.facebook.com/"><ion-icon class="icon" name="logo-facebook"></ion-icon></a></li>
+           <li><a href="https://www.linkedin.com/"><ion-icon class="icon" name="logo-linkedin"></ion-icon></a></li> 
+           <li><a href="https://www.instagram.com/"><ion-icon class="icon" name="logo-instagram"></ion-icon></a></li>
+           <li><a href="https://mail.google.com/"><ion-icon class="icon" name="mail-outline"></ion-icon></a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

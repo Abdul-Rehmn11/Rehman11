@@ -1,0 +1,29 @@
+@media only screen and (max-width: 767px) {
+    .logo {
+      display: none;
+    }
+    .nav-items {
+      margin-right: 2rem;
+    }
+    .copyright {
+      display: none;
+    }
+    .footer-icons ul {
+      margin-left: 10rem;
+    }
+    .grid--3-cols {
+      grid-template-columns: 1fr;
+    }
+    .detailsimran, .detailselon, .detailsmark, .kalam-details, .gilgit-details, .hunza-details, .lahore-details {
+      flex-direction: column;
+    }
+    .cta-contact {
+      padding: 5px;
+    }
+    .video {
+      margin: 0 5px !important;
+    }
+    .about-gilgit {
+      background-position: center;
+    }
+  }

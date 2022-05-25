@@ -1,0 +1,637 @@
+html {
+  /* font-size: 10px;default 1rem = 16px but here you can change now as i mentioned here 10px*/
+  font-size: 62.5%;
+  
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/************************/
+/* GENERAL REUSABLE COMPONENTS */
+/************************/
+
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 0 3.2rem !important;
+}
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 6.4rem;
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.mg-top-btm {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+/************************/
+/* HEADER-SECTION */
+/************************/
+.header-section {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 0 2rem;
+    height: 10rem;
+    background-color:#e67700 ;
+    color: #fff;
+}
+.logo {
+    height: 10.2rem;
+    border-radius: 1rem;
+}
+.nav-items {
+    font-weight: 500;
+}
+.cta-contact, .back-home {
+  background-color: green;
+  padding: 1rem;
+  border-radius: .5rem;
+}
+#contact {
+  margin-left: 9rem;
+}
+.cta-contact:hover {
+  color: #fab005 !important;
+}
+
+.nav-items a, .back-home {
+  font-size: 1.6rem;
+  clear: right;
+  text-decoration: none;
+  color: #fff;
+  margin: 0 0 0 2rem;
+  line-height: 7rem;
+}
+.nav-items a:hover {
+    color: #000;
+    /* color: #fab005; */
+}
+label {
+  margin: 0 4rem 0 0;
+  font-size: 2.6rem;
+  line-height: 7rem;
+  display: none;
+  width: 2.6rem;
+  float: right;
+}
+#toggle {
+  display: none;
+}
+
+
+/************************/
+/* HERO-SECTION */
+/************************/
+
+.hero-section {
+
+    width: 100%;
+    height: 90vh;
+    background-image: url(/assets/images/lhr1.jpg);
+    background-size: contain;
+    /* position: relative; */
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    background-size: cover;
+    /* animation: change 40s infinite; */
+}
+/************************/
+/* PERSONALITIES-SECTION */
+/************************/
+.personalities a {
+  text-decoration: none;
+}
+.p-1, .c-1, .ts-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 352PX;
+    color: #fff;
+}
+.p-name-img, .c-name-img, .t-name-img {
+  text-align: center;
+  background-color: #333;
+  height: 41rem;
+  border-radius: 1rem;
+}
+.p-name-img img, .c-name-img img, .t-name-img img {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.p-name-img h1, .c-name-img h1, .t-name-img h1 {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  color: #fff;
+  letter-spacing: 3px;
+}
+.span-head, .born, .spouse, .education, .children, .siblings, .name, .weather, .area, .founded, .population{
+  font-size: 4rem;
+  font-weight: 700;
+  color: green;
+}
+
+
+/************************/
+/* CITIES-SECTION */
+/************************/
+.cities a {
+  text-decoration: none;
+}
+.cities-section {
+    /* height: 60rem !important;
+    text-align: center;
+    height: 48rem; */
+}
+.cities-heading, .tourists-spots-heading, .personalities-heading {
+  font-size: 1.6rem;
+    color: hsl(31, 100%, 45%);
+}
+.cities-heading h1, .tourists-spots-heading h1, .personalities-heading h1 {
+  letter-spacing: 4px;
+}
+.cities-heading {
+  text-align: center;
+}
+
+/************************/
+/* TOURISTS-SPOT-SECTION */
+/************************/
+.spots a {
+  text-decoration: none;
+}
+.spot1, .spot2, .spot3, .city1, .city2, .city3, .imran, .elon, .mark {
+  box-shadow: 0 2.4rem 4.8rem rgba(250, 213, 157, 0.075);
+  border-radius: 1.2rem;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+.spot1:hover, .spot2:hover, .spot3:hover, .city1:hover, .city2:hover, .city3:hover, .imran:hover, .elon:hover, .mark:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(249, 174, 124, 0.5);
+}
+.tourists-spots-heading {
+    text-align:right;
+}
+
+/************************/
+/*CONTACT-SECTION */
+/************************/
+
+.contact-heading, .career, .lahore, .karachi, .islamabad, .hunza, .gilgit, .kalam {
+  background-color: #80c080;
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem;
+  /* color: #e67700; */
+  color: #fff;
+  letter-spacing: 1.5px;
+  border-radius: 1rem;
+}
+.career, .lahore, .karachi, .islamabad, .kalam, .hunza, .gilgit {
+  font-size: 3rem;
+}
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/************************/
+/*FOOTER-SECTION */
+/************************/
+.footer-section {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  background-color: #333;
+  height: 10rem;
+}
+.footer-section img {
+  margin-left: 5rem;
+}
+.footer-icons ul {
+  display: flex;
+  list-style: none;
+}
+.footer-icons ul li {
+  margin-right: 5rem;
+}
+.icon {
+  color: #fff;
+  width: 4rem;
+  height: 4rem;
+} 
+.icon:hover {
+  color:#e67700;
+}
+.copyright {
+  font-size: 1.6rem;
+  margin-left: 5rem;
+  color: #fff;
+}
+
+
+.blog-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.blog-section .celebrty-data {
+  width: 75%;
+}
+.celeb-img {
+  height: 450px;
+}
+.celeb-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.celeb-post-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 15px;
+}
+.celeb-post-list li {
+  margin-right: 20px;
+}
+.celeb-post-list li p {
+  font-size: 14px;
+  font-weight: 500;
+}
+.celeb-post-list li p span {
+  font-size: 12px;
+  font-weight: 400;
+}
+.c-content {
+  font-size: 1.6rem;
+}
+
+/************************/
+/*INTERNAL PAGES */
+/************************/
+
+.about-khan, .about-elon, .about-mark, .about-lahore, .about-karachi, .about-islamabad, .about-kalam, .about-hunza, .about-gilgit {
+  max-width: 100%;
+  height: 90vh;
+  background-color: #000;
+  background-image:url(/assets/images/imrankhan1.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: changeimran 40s infinite;
+}
+.about-elon {
+  background-image:url(/assets/images/el2.jpg);
+  animation: changeelon 40s infinite;
+}
+.about-mark {
+  background-image: url(/assets/images/mark1.jpg);
+  animation: changemark 40s infinite;
+}
+.about-lahore {
+  background-image: url(/assets/images/lahore1.jpg);
+  animation: changelahore 40s infinite;
+}
+.about-karachi {
+  background-image: url(/assets/images/karachi1.jpg);
+  animation: changekarachi 40s infinite;
+}
+.about-islamabad {
+  background-image: url(/assets/images/islmabad1.jpeg);
+  animation: changeislamabad 40s infinite;
+}
+.about-kalam {
+  background-image: url(/assets/images/kalam1.jpg);
+  animation: changekalam 40s infinite;
+}
+.about-gilgit {
+  background-image: url(/assets/images/gilgit2.jpg);
+  animation: changegilgit 40s infinite;
+}
+.about-hunza {
+  background-image: url(/assets/images/hunza1.jpg);
+  animation: changehunza 40s infinite;
+}
+.detailsimran, .detailselon, .detailsmark, .karachi-details, .islamabad-details, .lahore-details, .kalam-details, .hunza-details, .gilgit-details {
+  display: flex;
+  justify-content:center;
+  gap: 2rem;
+  
+}
+.karachi-details, .islamabad-details, .lahore-details, .hunza-details, .gilgit-details, .kalam-details {
+  display: flex;
+  justify-content: space-around;
+}
+.detailsimran p, .career-desc, .detailselon p, .detailsmark p, .lahore-details p, .karachi-details p, .islamabad-details p, .kalam-details p, .hunza-details p, .gilgit-details p  {
+  font-size: 1.6rem;
+  letter-spacing: 1.2px;
+  color: #000;
+}
+.career-desc, .lahore-desc, .karachi-desc, .islamabad-desc, .kalam-desc, .hunza-desc, .gilgit-desc {
+  background-color: #f1f3f5;
+  line-height: 2;
+  padding: 1rem;
+  text-align: justify;
+}
+@keyframes changeimran {
+  0%
+  {
+    background-image:url(/assets/images/imrankhan1.webp);
+  }
+  20%
+  {
+    background-image:url(/assets/images/imrankhan5.webp);
+  }
+  20%
+  {
+    background-image:url(/assets/images/imrankhan6.webp);
+  }
+  60%
+  {
+    background-image:url(/assets/images/imrankhan7.jpg);
+  }
+  80%
+  {
+    background-image:url(/assets/images/imrankhan.webp);
+  }
+  100%
+  {
+    background-image:url(/assets/images/imrankhan1.webp);
+  }
+}
+
+@keyframes changeelon {
+  0%
+  {
+    background-image:url(/assets/images/elon1.webp);
+  }
+  20%
+  {
+    background-image:url(/assets/images/elon2.webp);
+  }
+  20%
+  {
+    background-image:url(/assets/images/elon3.jpg);
+  }
+  60%
+  {
+    background-image:url(/assets/images/elon4.jpg);
+  }
+  80%
+  {
+    background-image:url(/assets/images/elon5.webp);
+  }
+  100%
+  {
+    background-image:url(/assets/images/elon6.webp);
+  }
+}
+
+@keyframes changemark {
+  0%
+  {
+    background-image:url(/assets/images/mark1.jpg);
+  }
+  20%
+  {
+    background-image:url(/assets/images/mark2.jpg);
+  }
+  20%
+  {
+    background-image:url(/assets/images/mark3.jpeg);
+  }
+  60%
+  {
+    background-image:url(/assets/images/mark4.jpg);
+  }
+  80%
+  {
+    background-image:url(/assets/images/mark5.jpg);
+  }
+  100%
+  {
+    background-image:url(/assets/images/mark6.webp);
+  }
+}
+@keyframes changelahore {
+  0%
+  {
+    background-image:url(/assets/images/lahore1.jpg);
+  }
+  20%
+  {
+    background-image:url(/assets/images/lahore2.webp);
+  }
+  20%
+  {
+    background-image:url(/assets/images/lahore3.webp);
+  }
+  60%
+  {
+    background-image:url(/assets/images/lahore4.jpg);
+  }
+  80%
+  {
+    background-image:url(/assets/images/lahore6.jpg);
+  }
+  100%
+  {
+    background-image:url(/assets/images/lahore7.jpg);
+  }
+}
+
+@keyframes changekarachi {
+  0%
+  {
+    background-image:url(/assets/images/karachi1.jpg);
+  }
+  20%
+  {
+    background-image:url(/assets/images/karachi2.jpg);
+  }
+  20%
+  {
+    background-image:url(/assets/images/karachi3.jpg);
+  }
+  60%
+  {
+    background-image:url(/assets/images/karachi6.jpg);
+  }
+  80%
+  {
+    background-image:url(/assets/images/karachi1.jpg);
+  }
+  100%
+  {
+    background-image:url(/assets/images/karachi2.jpg);
+  }
+}
+
+@keyframes changeislamabad {
+  0%
+  {
+    background-image:url(/assets/images/islmabad1.jpeg);
+  }
+  20%
+  {
+    background-image:url(/assets/images/islamabad2.jpg);
+  }
+  20%
+  {
+    background-image:url(/assets/images/islamabad3.jpg);
+  }
+  60%
+  {
+    background-image:url(/assets/images/islamabad4.jpg);
+  }
+  80%
+  {
+    background-image:url(/assets/images/islamabad5.jpg);
+  }
+  100%
+  {
+    background-image:url(/assets/images/islamabad6.webp);
+  }
+}
+@keyframes changekalam {
+  0%
+  {
+    background-image:url(/assets/images/kalam1.jpg);
+  }
+  20%
+  {
+    background-image:url(/assets/images/kalam2.jpg);
+  }
+  20%
+  {
+    background-image:url(/assets/images/kalam3.jpg);
+  }
+  60%
+  {
+    background-image:url(/assets/images/kalam4.jpg);
+  }
+  80%
+  {
+    background-image:url(/assets/images/kalam5.jpg);
+  }
+  100%
+  {
+    background-image:url(/assets/images/kalam6.jpg);
+  }
+}
+@keyframes changegilgit {
+  0%
+  {
+    background-image:url(/assets/images/gilgit2.jpg);
+  }
+  20%
+  {
+    background-image:url(/assets/images/gilgit3.jpg);
+  }
+  20%
+  {
+    background-image:url(/assets/images/gilgit4.webp);
+  }
+  60%
+  {
+    background-image:url(/assets/images/gilgit5.webp);
+  }
+  80%
+  {
+    background-image:url(/assets/images/gilgit6.jpg);
+  }
+  100%
+  {
+    background-image:url(/assets/images/gilgit2.jpg);
+  }
+}
+@keyframes changehunza {
+  0%
+  {
+    background-image:url(/assets/images/hunza1.jpg);
+  }
+  20%
+  {
+    background-image:url(/assets/images/hunza2.jpg);
+  }
+  20%
+  {
+    background-image:url(/assets/images/hunza3.jpg);
+  }
+  60%
+  {
+    background-image:url(/assets/images/hunza4.jpeg);
+  }
+  80%
+  {
+    background-image:url(/assets/images/hunza5.jpg);
+  }
+  100%
+  {
+    background-image:url(/assets/images/hunza6.webp);
+  }
+}
+.video {
+  position: absolute;
+  border-radius: 1rem;
+  margin: 0 6rem;
+}
+.video-head {
+  text-align: center;
+}
